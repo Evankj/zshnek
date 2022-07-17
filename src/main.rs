@@ -20,10 +20,10 @@ fn main() {
 
     let mut tail_nodes = Vec::new();
     for index in 1..10 {
-        tail_nodes.push(SnakeNode::new(index, (GAME_AREA_Y - 1) - index));
+        tail_nodes.push(SnakeNode::new(GAME_AREA_X / 2, (GAME_AREA_Y / 2) - index));
     }
 
-    let mut snake: Snake = Snake::new(SnakeNode::new(12, GAME_AREA_Y - 1), tail_nodes);
+    let mut snake: Snake = Snake::new(SnakeNode::new(GAME_AREA_X / 2, GAME_AREA_Y / 2), tail_nodes);
 
     'game_loop: loop {
         match game_manager.state {
