@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 pancurses = "0.17"
+rand = "0.8.3"
+fps_clock = "2.0.0"
